@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="IM 即时通讯产品全链路设计">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3451b2" />
+      <stop offset="1" stop-color="#06b6d4" />
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="url(#g)" />
+  <!-- 对话气泡：IM 的最简符号，16px 下仍可辨识 -->
+  <path d="M14 18a8 8 0 0 1 8-8h20a8 8 0 0 1 8 8v14a8 8 0 0 1-8 8H28l-9 9v-9h-1a8 8 0 0 1-8-8V18z" fill="#ffffff" />
+  <g fill="#3451b2">
+    <circle cx="24" cy="25" r="3" />
+    <circle cx="33" cy="25" r="3" />
+    <circle cx="42" cy="25" r="3" />
+  </g>
+</svg>

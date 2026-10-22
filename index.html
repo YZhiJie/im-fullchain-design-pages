@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IM 全链路设计 · 漫画剧场</title>
+  <!-- 站点根即 comics/ 内容，相对路径指向同目录图标 -->
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; background: #0d1117; color: #c9d1d9; min-height: 100vh; }
+    .header { text-align: center; padding: 48px 24px 24px; border-bottom: 1px solid #30363d; }
+    .header h1 { font-size: 32px; color: #58a6ff; margin-bottom: 8px; }
+    .header p { color: #8b949e; font-size: 16px; }
+    .container { max-width: 960px; margin: 0 auto; padding: 32px 24px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; margin-top: 24px; }
+    .card { background: #161b22; border: 1px solid #30363d; border-radius: 12px; padding: 24px; transition: transform 0.2s, border-color 0.2s; text-decoration: none; color: inherit; display: block; }
+    .card:hover { transform: translateY(-4px); border-color: #58a6ff; }
+    .card .ep { font-size: 12px; color: #8b949e; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px; }
+    .card h2 { font-size: 20px; color: #c9d1d9; margin-bottom: 8px; }
+    .card p { font-size: 14px; color: #8b949e; line-height: 1.6; }
+    .footer { text-align: center; padding: 32px 24px; color: #484f58; font-size: 14px; border-top: 1px solid #30363d; margin-top: 48px; }
+    .footer a { color: #58a6ff; text-decoration: none; }
+    .footer a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>🎬 IM 全链路设计 · 漫画剧场</h1>
+    <p>用漫画拆解即时通讯系统的三大核心模块</p>
+  </div>
+  <div class="container">
+    <div class="grid">
+      <a class="card" href="./EP01-message-flow.html">
+        <div class="ep">EP.01</div>
+        <h2>消息收发体系</h2>
+        <p>一条消息从发送到落地的完整旅程：长连接建立、协议设计、ACK 确认与重试机制。</p>
+      </a>
+      <a class="card" href="./EP02-session-sync.html">
+        <div class="ep">EP.02</div>
+        <h2>会话列表模块</h2>
+        <p>会话状态如何实时同步？未读数计算、置顶排序与多端一致性方案。</p>
+      </a>
+      <a class="card" href="./EP03-offline-recovery.html">
+        <div class="ep">EP.03</div>
+        <h2>离线补偿机制</h2>
+        <p>弱网与离线场景下的消息不丢不重：离线消息拉取、去重与顺序性保障。</p>
+      </a>
+    </div>
+  </div>
+  <div class="footer">
+    <p>📖 <a href="https://github.com/YZhiJie/im-fullchain-design">完整文档与代码示例</a>（私有仓库）</p>
+  </div>
+</body>
+</html>
